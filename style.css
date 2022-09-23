@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7F7;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FB5733;
+    border-radius: 2px;
+}
+/*
+
+INDEX PAGE CSS STARTS HERE
+
+*/
+
+.bgimg{
+    background-image: url(GYM/sports-hero-img.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
+    
+}
+.main-bg{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.pc-nav{
+    display: flex;
+    padding: 30px 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mob-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+}
+
+.mob-nav-icon{
+    color: white;
+    background-color: #FB5733;
+    padding:  8px 12px;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+
+.mob-nav-bar{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.mob-nav-items a{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+}
+
+.close-icon{
+    display: flex;
+    justify-content: right;
+    margin: 30px;
+    font-size: 20px;
+    color: #FB5733;
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+
+.nav-bar a{
+    color: white;
+    text-decoration:  none;
+    margin: 15px;
+    font-size: small;
+}
+
+.nav-for-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.nav-for-icon i:hover{
+    cursor: pointer;
+    color: #FB5733;
+
+}
+
+.nav-for-icon a:hover{
+    cursor: pointer;
+    color: #FB5733;
+
+}
+.nav-for-icon i,a{
+    color: white;
+    text-decoration:  none;
+    margin: 0px 12px;
+    font-size: 20px;
+}
+
+.heading{
+    margin: 2% 5%;
+    display: flex;
+    flex-flow: column;
+}
+
+.heading h1{
+    font-size: 80px;
+    color: white;
+    line-height: 80px;
+}
+.heading p,a{
+    color: white;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.white-btn{
+    padding: 12px 40px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.white-btn:hover{
+    background-color: #FB5733;
+    color: white;
+    cursor: pointer;
+}
+
+
+.catagory h3{
+    font-size: 23px;
+    margin: 1% 5%;
+    margin-top: 80px;
+}
+
+.main-catagory-img{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   margin: 0px 5%;
+   
+}
+
+.catagory-img{
+    display: flex;
+    align-items: flex-end;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding: 50px 20px;
+    height: 500px;
+}
+
+.trending{
+    background-color: #131316;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.trending h3{
+    color: white;
+    font-size: 40px;
+}
+
+.trending img{
+    height: 500px;
+}
+
+
+.pro-head{
+    margin: 2% 5%;
+    font-size: 20px;
+}
+
+.products{
+    margin: 0% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.for-products{
+    display: flex;
+    flex-flow: column;
+}
+
+.for-products p{
+    margin: 2%;
+    font-size: 20px;
+   color: rgba(0, 0, 0, 0.728);
+}
+
+.for-products a{
+    margin: 2%;
+    color: rgba(0, 0, 0, 0.501);
+    margin-top: -5px;
+}
+
+.banner1{
+    margin: 5%;
+    background-image: url(GYM/sports-wear-store-banner-bg-img.jpg);
+    background-size: cover; 
+    height: 74vh;
+    display: flex;
+}
+
+.abt-banner1{
+    margin: 0px 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    
+}
+
+.abt-banner1 h3,p{
+    color: white;
+}
+
+.abt-banner1 h3{
+    font-size: 40px;
+    margin:  0px 60px;
+}
+
+.abt-banner1 p{
+    font-size: 20px;
+    margin:  25px 60px;
+}
+
+.abt-banner1 button{
+    height: 50px;
+    width: 40%;
+    margin:  25px 60px;
+}
+
+
+
+
+/*
+
+RESPONSIVENESS STARTS HERE
+
+*/
+
+@media screen and (max-width: 1046px){
+
+.trending h3{
+    font-size: 35px;
+}
+
+.trending img{
+   height: 350px;
+}
+
+.for-products img{
+    height: 200px;
+}
+
+.for-products p{
+    font-size: 16px;
+}
+
+.for-products a{
+    font-size: 16px;
+}
+
+.abt-banner1{
+    margin: 0px 1%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    
+}
+
+.abt-banner1 h3{
+    font-size: 25px;
+}
+
+
+.abt-banner1 p{
+    font-size: 18px;
+}
+
+.abt-banner1 button{
+    height: 40px ;
+    padding: 5px;
+    
+}
+.banner1 img{
+    height: 350px;
+}
+
+
+}
+
+@media screen and (min-width: 900px){
+    .mob-nav{
+        display: none
+    }
+}
+
+
+@media screen and (max-width: 900px){
+
+   
+
+
+      .pc-nav{
+        display: none;
+    }
+  
+    .trending h3{
+        font-size: 30px;
+    }
+    
+    .trending img{
+       height: 300px;
+    }
+    
+    .for-products img{
+        height: 150px;
+    }
+
+    .for-products p{
+        font-size: 14px;
+    }
+    .banner1 img{
+        height: 480px;
+    }
+    
+
+    .banner1 {
+        height: 150vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 800px){
+    .trending h3{
+        font-size: 20px;
+    }
+    
+    .trending img{
+       height: 250px;
+    }
+
+    .banner1 img{
+        height: 420px;
+    }
+    
+    .banner1 {
+        height: 130vh;
+}
+}
+
+@media screen and (max-width: 700px){
+    .trending{
+       
+        display: flex;
+        flex-flow: column ;
+        justify-content: center;
+       
+        
+    }
+
+    .trending img{
+        height: 500px;
+        margin: 0% 18%;
+     }
+     
+     .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
+
+     .for-products img{
+        height: 250px;
+    }
+
+    
+    .banner1 img{
+        height: 360px;
+    }
+    
+.abt-banner1 h3{
+    font-size: 30px;
+    
+}
+
+.abt-banner1 p{
+    font-size: 15px;
+}
+
+.abt-banner1 button{
+    height: 45px;
+    width: 40%;
+    margin:  25px 60px;
+}
+    .banner1{
+
+        height: 0vh;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .bgimg {
+            background-image: url(GYM/sports-hero-img.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top;
+    
+        }
+
+                .heading h1 {
+                    font-size: 65px;
+                    color: white;
+                    line-height: 60px;
+                }
+        
+                .heading p,
+                a {
+                    color: white;
+                    font-size: 15px;
+                    margin: 20px 0px;
+                }
+
+    .main-catagory-img {
+            display: grid;
+            grid-template-columns: 1fr;
+    
+    
+        }
+
+    .catagory-img {
+                    height: 400px;
+                    padding: 20px 10px;
+                }
+
+    
+     .trending img{
+     height: 400px;
+     margin: 0% 18%;
+     }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .heading h1 {
+        font-size: 50px;
+        color: white;
+        line-height: 60px;
+    }
+
+    .heading p,
+    a {
+        color: white;
+        font-size: 13px;
+        margin: 20px 0px;
+    }
+    .for-products img{
+        height: 150px;
+    }
+
+    .banner1{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .banner1 img{
+        margin: 0px 10%;
+        height: 450px;
+    }
+
+      
+
+}
+
+@media screen and (max-width: 500px){
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.for-products img{
+    margin: 0px 10%;
+    height: 200px;
+    width: 280px;
+}
+.banner1 img{
+    margin: 0px 9%;
+    height: 400px;
+}
+}
+
+@media screen and (max-width: 400px){
+
+    .trending img{
+        height: 300px;
+        margin: 0% 18%;
+        }
+        .for-products img{
+            width: 200px;
+            height: 150px;
+        }
+
+        .banner1 img{
+            margin: 0px 4%;
+            height: 350px;
+        }
+
+        
+    }
