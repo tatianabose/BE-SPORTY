@@ -75,6 +75,10 @@ INDEX PAGE CSS STARTS HERE
     width: 100%;
 }
 
+.open{
+   display: block;
+}
+
 .mob-nav-items a{
     display: flex;
     flex-flow: column;
